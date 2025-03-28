@@ -431,6 +431,7 @@ ul {
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
     gap: 20px;
     max-height: 320px;
     overflow: hidden;
@@ -744,6 +745,14 @@ ul {
         cursor: pointer;
     }
     
+    .nav-links a {
+        transition: color 0.25s ease-in;
+    }
+    
+    .nav-links a:hover {
+        color: var(--apricot);
+    }
+    
     .featured-grid .watch-container:hover {
         img {
             transform: scale(0.9, 0.9);
@@ -793,6 +802,7 @@ ul {
         .name, .price {
             display: none;
         }
+
         /* .price {
             color: var(--darker-gray-1);
         } */
